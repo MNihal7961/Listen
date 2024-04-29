@@ -1,9 +1,14 @@
 "use client"
 
+import useAuthModal from "@/hooks/useAuthModal";
+import { useUser } from "@/hooks/useUser";
 import { AiOutlinePlus } from "react-icons/ai";
 import { TbPlaylist } from "react-icons/tb";
 
 const Library = () => {
+
+    const authModal=useAuthModal()
+    const{user}=useUser()
     const onClick=()=>{
 
     }
