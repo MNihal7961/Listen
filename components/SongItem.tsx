@@ -26,18 +26,17 @@ const SongItem: React.FC<SongItemProps> = ({ data, onClick }) => {
         />
       </div>
 
-      <div className="flex flex-col text-start w-4 pt-4 gap-y-1">
-        <p className="font-semibold truncate">{data.title}</p>
-        <p className="text-neutral-400 text-sm pb-4 truncate">
+      <div className="flex flex-col items-start w-full p-4 gap-y-1">
+        <p className="font-semibold truncate w-full">{data.title}</p>
+        <p className="text-neutral-400 text-sm pb-4 w-full truncate">
           By {data.author}
         </p>
       </div>
-
       <div className="absolute bottom-24 right-5 ">
         <PlayButton />
-      </div>
+      </div> 
     </div>
   );
-};
+}; 
 
 export default SongItem;
